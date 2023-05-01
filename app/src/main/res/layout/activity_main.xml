@@ -6,13 +6,121 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <RelativeLayout
+        android:id="@+id/group_items"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_gravity="center"
+        android:padding="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn1"
+            style="@style/item_button"
+            android:text="@string/_1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn2"
+            style="@style/item_button"
+            android:layout_toEndOf="@id/btn1"
+            android:text="@string/_2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn3"
+            style="@style/item_button"
+            android:layout_toEndOf="@id/btn2"
+            android:text="@string/_3" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn4"
+            style="@style/item_button"
+            android:layout_toEndOf="@id/btn3"
+            android:text="@string/_4" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn5"
+            style="@style/item_button"
+            android:layout_below="@id/btn3"
+            android:text="@string/_5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn6"
+            style="@style/item_button"
+            android:layout_below="@id/btn2"
+            android:layout_toEndOf="@id/btn5"
+            android:text="@string/_6" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn7"
+            style="@style/item_button"
+            android:layout_below="@id/btn3"
+            android:layout_toEndOf="@id/btn6"
+            android:text="@string/_7" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn8"
+            style="@style/item_button"
+            android:layout_below="@id/btn4"
+            android:layout_toEndOf="@id/btn7"
+            android:text="@string/_8" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn9"
+            style="@style/item_button"
+            android:layout_below="@id/btn5"
+            android:text="@string/_9" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn10"
+            style="@style/item_button"
+            android:layout_below="@id/btn6"
+            android:layout_toEndOf="@id/btn9"
+            android:text="@string/_10" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn11"
+            style="@style/item_button"
+            android:layout_below="@id/btn7"
+            android:layout_toEndOf="@id/btn10"
+            android:text="@string/_11" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn12"
+            style="@style/item_button"
+            android:layout_below="@id/btn8"
+            android:layout_toEndOf="@id/btn11"
+            android:text="@string/_12" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn13"
+            style="@style/item_button"
+            android:layout_below="@id/btn9"
+            android:text="@string/_13" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn14"
+            style="@style/item_button"
+            android:layout_below="@id/btn10"
+            android:layout_toEndOf="@id/btn13"
+            android:text="@string/_14" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn15"
+            style="@style/item_button"
+            android:layout_below="@id/btn11"
+            android:layout_toEndOf="@id/btn14"
+            android:text="@string/_15" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn16"
+            style="@style/item_button"
+            android:layout_below="@id/btn12"
+            android:layout_toEndOf="@id/btn15"
+            android:text="@string/_0" />
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
